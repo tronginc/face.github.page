@@ -43,11 +43,19 @@ $(document).ready(function () {
 })
 
 function getSlickSettings() {
+    let slides = parseInt(window.innerWidth / 280, 10);
+    if (window.innerWidth <= 720 && window.innerWidth > 640) {
+        slides = parseInt(window.innerWidth / 220, 10);
+    }
+    if (window.innerWidth <= 640) {
+        slides = parseInt(window.innerWidth / 150, 10);
+    }
+    console.log(slides);
     return {
         infinite: true,
         centerMode: true,
-        slidesToShow: parseInt(window.innerWidth / 320),
-        slidesToScroll: parseInt(window.innerWidth / 320),
+        slidesToShow: slides,
+        slidesToScroll: slides,
         autoplay: true,
         arrows: false,
     }
