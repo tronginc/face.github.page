@@ -7,6 +7,49 @@ html body {
     justify-content: center;
 }
 
+.nav_bar_mobile {
+    display: none;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #cccccc;
+}
+
+.nav_bar_mobile .menu {
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nav_bar_mobile .logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav_bar_mobile .logo2 {
+    height: 70px;
+    margin-bottom: -20px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.nav_mobile {
+    background: #ffff;
+    overflow: hidden;
+    transition: height 200ms;
+    display: none;
+    flex-direction: column;
+}
+
+.nav_mobile a {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    color: #e2b542;
+    font-size: 16px;
+    border-bottom: 1px dotted #cccccc;
+}
+
 .nav {
     width: 1080px;
     display: flex;
@@ -284,10 +327,13 @@ section {
 .news .posts {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .news>.posts>.item {
     padding: 10px;
+    flex: 1;
+    min-width: 150px;
 }
 
 .social-icons {
@@ -298,4 +344,45 @@ section {
 .social-icons>img {
     height: 50px;
     padding: 5px 0px;
+}
+
+.iframe-maps {
+    height: 450px;
+    width: 100%;
+}
+
+.iframe-facebook {
+    width: 340px;
+    height: 214px;
+    margin: auto;
+}
+
+@media screen and (max-width: 720px) {
+    .iframe-maps {
+        height: 550px;
+        width: 100%;
+    }
+    .iframe-facebook {
+        height: 214px;
+    }
+    .contact>.social {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        background-color: #dddddd;
+        text-align: center;
+    }
+    .social-icons {
+        border-bottom: 1px dotted #aaaaaa;
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (max-width: 872px) {
+    .nav_bar {
+        display: none;
+    }
+    .nav_bar_mobile, .nav_mobile {
+        display: flex;
+    }
 }
