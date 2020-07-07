@@ -12,6 +12,7 @@ html body {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    flex-wrap: wrap;
 }
 
 .nav>.nav_item {
@@ -40,7 +41,7 @@ html body {
     text-align: center;
     margin: auto;
     padding: 50px 0;
-    width: 1080px;
+    max-width: 1080px;
     margin-bottom: -75px;
 }
 
@@ -53,7 +54,7 @@ section {
 }
 
 .prize>.header {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
     position: relative;
     padding: 10px;
