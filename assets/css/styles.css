@@ -154,6 +154,21 @@ section {
     margin-top: 20px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.card>.button2 {
+    font-size: 16;
+    border-radius: 20px;
+    padding: 9px 15px;
+    border: 1px solid #ffffff;
+    width: 140px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .card>.button:hover {
@@ -161,8 +176,22 @@ section {
     color: #FFFFFF
 }
 
+.card>.button2:hover {
+    background-color: #fff;
+    color: #000000
+}
+
 .contact {
     background-color: #e2b542;
+    position: relative;
+}
+
+.contact>.social {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: #FFFFFF;
+    z-index: 9999;
 }
 
 .contact>.info {
