@@ -1,0 +1,189 @@
+html body {
+    margin: auto;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.nav>.nav_item {
+    display: flex;
+    align-items: center;
+}
+
+.nav>.nav_item>.nav_link {
+    color: #e2b542;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.nav>.nav_item>.nav_logo1 {
+    height: 65px;
+}
+
+.nav>.nav_item>.nav_logo2 {
+    height: 110px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+.prize-info {
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    width: 1080px;
+    margin-bottom: -75px;
+}
+
+section {
+    display: block;
+}
+
+.prize {
+    margin-top: 150px;
+}
+
+.prize>.header {
+    width: 1280px;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+}
+
+.prize>.header>.heading {
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.prize>.header>.icon {
+    position: absolute;
+    top: -23px;
+    right: 0;
+    width: 180px;
+}
+
+.prize>.header>.heading>.title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.prize>.content-1 {
+    background-color: #fed513;
+    padding: 50px 0;
+    margin: 15px 0;
+}
+
+.prize>.content-2 {
+    background-color: #fe9614;
+    padding: 50px 0;
+    margin: 15px 0;
+}
+
+.prize>.content-3 {
+    background-color: #041793;
+    padding: 50px 0;
+    margin: 15px 0;
+    color: #FFFFFF;
+}
+
+.prize>.content-4 {
+    background-color: #17a9fa;
+    padding: 50px 0;
+    margin: 15px 0;
+    color: #FFFFFF;
+}
+
+.prize>.content-5 {
+    background-color: #e2b542;
+    padding: 50px 0;
+    margin: 15px 0;
+}
+
+.slick-carousel {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card>img {
+    height: 240px;
+    width: 240px;
+}
+
+.card {
+    width: 240px;
+    margin: auto;
+}
+
+.card>.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 240px;
+}
+
+.card>.description {
+    font-size: 16;
+    margin: 6 0px;
+    width: 240px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card>.button {
+    font-size: 16;
+    border-radius: 20px;
+    padding: 9px 15px;
+    border: 1px solid #000000;
+    width: 140px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card>.button:hover {
+    background-color: #000000;
+    color: #FFFFFF
+}
+
+.contact {
+    background-color: #e2b542;
+}
+
+.contact>.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    align-items: center;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.contact>.info>img {
+    height: 70px;
+}
+
+.contact>.info>span {
+    text-align: center;
+}
+
+/* SLICK */
+
+.slick-slide {
+    outline: none
+}
