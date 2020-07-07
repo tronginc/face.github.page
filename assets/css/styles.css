@@ -255,6 +255,7 @@ section {
 
 .contact>.info>span {
     text-align: center;
+    margin-left: 5px;
 }
 
 /* SLICK */
