@@ -289,3 +289,13 @@ section {
 .news>.posts>.item {
     padding: 10px;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons>img {
+    height: 50px;
+    padding: 5px 0px;
+}
