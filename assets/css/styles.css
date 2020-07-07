@@ -108,6 +108,13 @@ section {
     font-weight: bold;
     display: flex;
     align-items: center;
+    max-width: 80%;
+}
+
+.prize>.header>.heading>.title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-left: 10px;
 }
 
 .prize>.header>.icon {
@@ -115,12 +122,6 @@ section {
     top: -23px;
     right: 0;
     width: 180px;
-}
-
-.prize>.header>.heading>.title {
-    font-size: 1.8rem;
-    font-weight: normal;
-    margin-left: 10px;
 }
 
 .prize>.content-1 {
@@ -285,7 +286,7 @@ section {
     flex: 3;
     flex-direction: column;
     padding: 10px;
-    min-width: 700px;
+    min-width: 540px;
 }
 
 .news>.content>.sub-content {
@@ -384,5 +385,42 @@ section {
     }
     .nav_bar_mobile, .nav_mobile {
         display: flex;
+    }
+    .prize>.header>.heading {
+        font-size: 4rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .prize>.header>.heading>.title {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    .prize>.header>.icon {
+        position: absolute;
+        top: -15px;
+        right: 0;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .prize>.header>.heading {
+        font-size: 3rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .prize>.header>.heading>.title {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    .prize>.header>.icon {
+        position: absolute;
+        top: -10px;
+        right: 0;
+        width: 120px;
     }
 }
