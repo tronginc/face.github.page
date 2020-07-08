@@ -470,6 +470,7 @@ section {
     width: 30%;
     padding: 10px 0;
     min-width: 250px;
+    object-fit: contain;
 }
 
 .modal>.vote-container {
@@ -584,6 +585,7 @@ section {
 
 .news-container>.posts>.item>img {
     max-width: 200px;
+    object-fit: contain;
 }
 
 .news-container>.posts>.item>div {
@@ -744,6 +746,7 @@ section {
     }
     .iframe-facebook {
         height: 214px;
+        margin-top: 1px;
     }
     .contact>.social {
         position: relative;
