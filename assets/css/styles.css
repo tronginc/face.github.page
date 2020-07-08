@@ -739,7 +739,7 @@ section {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 641px) and (max-width: 720px) {
     .iframe-maps {
         height: 550px;
         width: 100%;
@@ -772,7 +772,7 @@ section {
     }
 }
 
-@media screen and (max-width: 872px) {
+@media screen and (min-width: 721px) and (max-width: 872px) {
     .nav_bar {
         display: none;
     }
