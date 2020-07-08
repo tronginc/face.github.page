@@ -687,12 +687,28 @@ section {
     font-weight: bold;
     text-align: left;
     margin-top: 30px;
+    padding-left: 10px;
 }
 
 .bar-social {
     margin-top: 10px;
     background-color: #FFFFFF;
     text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination>div {
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pagination>.active {
+    font-weight: bold;
 }
 
 /* /////////////////////////////////// */
@@ -725,6 +741,12 @@ section {
         width: 100%;
         padding: 10px 0;
         object-fit: contain;
+    }
+    .prize {
+        margin-top: 80px;
+    }
+    .prize-info>h1 {
+        font-size: 30px;
     }
 }
 
@@ -770,12 +792,15 @@ section {
         margin-right: 10px;
         margin-left: 10px;
     }
-    .news-container>.posts>.item {
+    .news-container>.posts>.item, .news-container {
         display: block;
     }
     .news-container>.posts>.item>img {
         width: 100% !important;
         max-width: none !important;
+    }
+    .prize {
+        margin-top: 60px;
     }
 }
 
@@ -822,5 +847,14 @@ section {
     }
     .modal>.vote-container {
         margin-bottom: 25px;
+    }
+    .prize {
+        margin-top: 40px;
+    }
+    .prize-info>h1 {
+        font-size: 25px;
+    }
+    .news-title {
+        font-size: 25px;
     }
 }
