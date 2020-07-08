@@ -13,8 +13,12 @@ $("#menu").click(function () {
     }
 })
 
-$('a[href^="#"]').click(function () {
-    var href = $.attr(this, 'href');
+$('a[href^="#"]').click(function (e) {
+    const href = $.attr(this, 'href');
+    if (!$(href).offset() || href === '#binh-chon') {
+        window.location.hash = href;
+        return true;
+    }
 
     $root.animate({
         scrollTop: $(href).offset().top

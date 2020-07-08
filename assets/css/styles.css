@@ -430,6 +430,7 @@ section {
     max-width: 350px;
     min-width: 250px;
     margin-left: 20px;
+    object-fit: contain;
 }
 
 .modal>.user-info>.info>.full-name {
@@ -692,6 +693,75 @@ section {
 
 /* /////////////////////////////////// */
 
+@media screen and (max-width: 872px) {
+    .nav_bar {
+        display: none;
+    }
+    .nav_bar_mobile, .nav_mobile {
+        display: flex;
+    }
+    .prize>.header>.heading {
+        font-size: 3.6rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .prize>.header>.heading>.title {
+        font-size: 1.3rem;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    .prize>.header>.icon {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        width: 150px;
+    }
+    .modal>.photos>img {
+        width: 100%;
+        padding: 10px 0;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .iframe-maps {
+        height: 550px;
+        width: 100%;
+    }
+    .iframe-facebook {
+        height: 214px;
+        margin-top: 1px;
+    }
+    .contact>.social {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        background-color: #dddddd;
+        text-align: center;
+    }
+    .social-icons {
+        border-bottom: 1px dotted #aaaaaa;
+        margin-bottom: 3px;
+    }
+    .card {
+        width: 160px;
+    }
+    .card>.button {
+        width: 110px;
+        font-size: 16px;
+    }
+    .card>.button2 {
+        width: 110px;
+        font-size: 16px;
+    }
+    .modal>.vote-container>button {
+        border-radius: 18px;
+        font-size: 20px;
+        padding: 12px 6px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .prize>.header>.heading {
         font-size: 3rem;
@@ -737,63 +807,12 @@ section {
         margin-right: 10px;
         margin-left: 10px;
     }
-}
-
-@media screen and (min-width: 641px) and (max-width: 720px) {
-    .iframe-maps {
-        height: 550px;
-        width: 100%;
+    .modal>.vote-container>button {
+        border-radius: 16px;
+        font-size: 18px;
+        padding: 10px 6px;
     }
-    .iframe-facebook {
-        height: 214px;
-        margin-top: 1px;
-    }
-    .contact>.social {
-        position: relative;
-        top: 0px;
-        right: 0px;
-        background-color: #dddddd;
-        text-align: center;
-    }
-    .social-icons {
-        border-bottom: 1px dotted #aaaaaa;
-        margin-bottom: 3px;
-    }
-    .card {
-        width: 160px;
-    }
-    .card>.button {
-        width: 110px;
-        font-size: 16px;
-    }
-    .card>.button2 {
-        width: 110px;
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-width: 721px) and (max-width: 872px) {
-    .nav_bar {
-        display: none;
-    }
-    .nav_bar_mobile, .nav_mobile {
-        display: flex;
-    }
-    .prize>.header>.heading {
-        font-size: 3.6rem;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-    }
-    .prize>.header>.heading>.title {
-        font-size: 1.3rem;
-        font-weight: normal;
-        margin-left: 10px;
-    }
-    .prize>.header>.icon {
-        position: absolute;
-        top: -5px;
-        right: 0;
-        width: 150px;
+    .modal>.vote-container {
+        margin-bottom: 25px;
     }
 }
