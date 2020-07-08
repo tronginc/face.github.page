@@ -591,6 +591,7 @@ section {
 
 .news-container>.posts>.item>div {
     margin-left: 10px;
+    min-width: 200px;
 }
 
 .news-container>.posts>.item>div>.title {
@@ -601,6 +602,7 @@ section {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     color: black;
+    min-width: 200px;
 }
 
 .news-container>.posts>.item>div>.description {
