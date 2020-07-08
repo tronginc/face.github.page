@@ -469,6 +469,9 @@ section {
         width: 90px;
         font-size: 14px;
     }
+    .news-container>.posts {
+        flex: 1;
+    }
 }
 
 /* <-- Modal */
@@ -669,7 +672,6 @@ section {
     flex: 4;
     flex-direction: column;
     margin-right: 10px;
-    min-width: 600px;
 }
 
 .news-container>.posts>.item {
