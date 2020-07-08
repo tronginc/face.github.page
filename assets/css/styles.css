@@ -175,6 +175,7 @@ section {
 .slick-carousel {
     margin: 0 auto;
     width: 100%;
+    display: flex;
 }
 
 .card>a>img {
@@ -660,13 +661,15 @@ section {
     display: flex;
     max-width: 1080px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .news-container>.posts {
     display: flex;
-    flex: 3;
+    flex: 4;
     flex-direction: column;
-    margin-right: 7px;
+    margin-right: 10px;
+    min-width: 600px;
 }
 
 .news-container>.posts>.item {
@@ -686,15 +689,16 @@ section {
 
 .news-container>.posts>.item>div>.title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    color: black;
 }
 
 .news-container>.posts>.item>div>.description {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 7px;
     overflow: hidden;
     display: -webkit-box;
@@ -709,15 +713,39 @@ section {
 }
 
 .news-container>.bar {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    background-color: #fff;
-    margin-left: 7px;
+    margin-left: 10px;
     margin-top: 10px;
-    height: auto;
-    padding: 5px;
+    max-width: 300px;
 }
 
-.news-container>.bar>div {
+.news-container>.bar>.prize-list {
     padding: 5px;
-    font-size: 16px;
+    background-color: #ffffff
+}
+
+.news-container>.bar>.prize-list>div {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #e2b542;
+    border-radius: 5px;
+    margin: 7px 0px;
+    color: #FFFFFF;
+    ;
+}
+
+.news-title {
+    margin: auto;
+    max-width: 1080px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.bar-social {
+    margin-top: 10px;
+    background-color: #FFFFFF;
 }
