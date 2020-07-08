@@ -58,7 +58,11 @@ a {
     color: #e2b542;
     font-size: 15px;
     font-weight: bold;
-    border-bottom: 1px dotted #cccccc;
+    border-bottom: 1px dotted #dddddd;
+}
+
+.nav_mobile .active {
+    background-color: #dddddd;
 }
 
 .nav {
