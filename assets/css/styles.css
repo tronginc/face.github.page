@@ -199,7 +199,7 @@ section {
 }
 
 .card>.description {
-    font-size: 14;
+    font-size: 14px;
     margin: 6 0px;
     overflow: hidden;
     display: -webkit-box;
@@ -207,6 +207,7 @@ section {
     -webkit-box-orient: vertical;
     width: 100%;
     padding-bottom: -2px;
+    height: 50px;
 }
 
 .card>.button {
@@ -416,6 +417,7 @@ section {
 .modal>.user-info {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .modal>a>.back-btn {
@@ -452,6 +454,7 @@ section {
     font-size: 14px;
     margin: 10px 0;
     line-height: 20px;
+    text-align: justify !important;
 }
 
 .modal>.title {
@@ -463,6 +466,7 @@ section {
 .modal>.description {
     font-size: 14px;
     line-height: 20px;
+    text-align: justify !important;
 }
 
 .modal>.photos {
@@ -518,30 +522,18 @@ section {
 /* <-- Progress Bar */
 
 .progress-bar {
-    height: 30px;
+    height: 40px;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .progress-bar__inner {
-    position: relative;
-    display: block;
+    display: inline-block;
     height: 8px;
     background-color: #000000;
     animation: run-progress 1s;
     border-radius: 3.5px;
-}
-
-.progress-bar__inner:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: linear-gradient( -45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%);
-    background-size: 75px 75px;
 }
 
 @keyframes run-progress {
@@ -858,9 +850,11 @@ section {
         border-radius: 16px;
         font-size: 18px;
         padding: 10px 6px;
+        margin-top: 20px;
     }
     .modal>.vote-container {
         margin-bottom: 25px;
+        flex-direction: column;
     }
     .prize {
         margin-top: 40px;
@@ -870,5 +864,9 @@ section {
     }
     .news-title {
         font-size: 25px;
+    }
+    .modal>.user-info>.info>.full-name {
+        font-size: 25px;
+        margin-top: 20px;
     }
 }
