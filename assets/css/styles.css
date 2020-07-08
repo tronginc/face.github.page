@@ -432,7 +432,7 @@ section {
 
 .modal>.user-info>img {
     max-width: 350px;
-    min-width: 250px;
+    min-width: 200px;
     margin-left: 20px;
     object-fit: contain;
 }
@@ -474,7 +474,7 @@ section {
 .modal>.photos>img {
     width: 30%;
     padding: 10px 0;
-    min-width: 250px;
+    min-width: 200px;
     object-fit: contain;
 }
 
@@ -737,16 +737,30 @@ section {
         right: 0;
         width: 150px;
     }
+    .modal>.photos {
+        display: block !important;
+        flex-wrap: column;
+        margin: auto;
+    }
     .modal>.photos>img {
         width: 100%;
         padding: 10px 0;
-        object-fit: contain;
+        max-width: 450px;
+        margin: auto;
     }
     .prize {
         margin-top: 80px;
     }
     .prize-info>h1 {
         font-size: 30px;
+    }
+    .modal>.user-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal>.user-info>img {
+        margin-left: 0px;
+        width: 100%;
     }
 }
 
