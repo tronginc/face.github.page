@@ -657,7 +657,7 @@ section {
 
 .rules>h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .news-container {
@@ -725,17 +725,51 @@ section {
 
 .news-container>.bar>.prize-list {
     padding: 5px;
-    background-color: #ffffff
+    padding-top: 0px;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 
 .news-container>.bar>.prize-list>div {
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
     background-color: #e2b542;
     border-radius: 5px;
     margin: 7px 0px;
     color: #FFFFFF;
-    ;
+    display: flex;
+    align-items: center;
+}
+
+.news-container>.bar>.prize-list>div>img {
+    margin-right: 10px;
+    padding: 7px;
+    height: 18px;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.news-container>.bar>.prize-list>.title>div>img {
+    height: 16px;
+    width: 16px;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.news-container>.bar>.prize-list>.title>div {
+    margin-right: 10px;
+    padding: 6px 8px;
+    background-color: #e2b542;
+    border-radius: 5px;
+}
+
+.news-container>.bar>.prize-list>.title {
+    padding: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 7px 0px;
+    color: #000000
 }
 
 .news-title {
